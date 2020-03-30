@@ -1,11 +1,15 @@
 <!Doctype html>
 <html>
- 
+   
 <style>
+
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
 html{
     background: url(https://images7.alphacoders.com/594/594150.jpg)
     no-repeat center;
     background-size: cover;
+    font-family: 'Sen', sans-serif;
 }
 
 #title{
@@ -20,6 +24,7 @@ html{
     text-align: left;
 }
 
+
 </style>
 
 
@@ -30,16 +35,16 @@ html{
     </header>
     
     <form id="survey-form">
-        <div class="form-top">
+        <div id="form-top" class="form-top">
             
             <label for="name" id="name-label">Name</label>
-            <input id="name" type="text" name="name" placeholder="Enter your name">
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
             
             <label for="email" id="email-label">Email</label>
-            <input id="email" type="email" name="email" placeholder="Enter your email">
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
             
             <label for="age" id="number-label">Age</label>    
-            <input id="age" type="number" name="age" placeholder="Enter your name" min="5" max="115">
+            <input id="number" type="number" name="age" placeholder="Enter your name" min="5" max="115">
             
             <label>How did you hear about us?</label>
             <select id="dropdown" class="dropdown">
@@ -51,20 +56,20 @@ html{
             </select>
         </div> 
         
-        <div id="survey-btns">
+        <div id="survey-btns" class="flex-box">
             <p>What is your climbing ability?</p>
             
             <label for="beginner">Beginner
             <input type="radio" name="climbing-ability" value="beginner"></label>
 
             <label for="intermediate">Intermediate
-            <input type="radio" name="climbing-ability"></label>
+            <input type="radio" name="climbing-ability" value="intermediate"></label>
 
             <label for="advanced">Advanced
-            <input type="radio" name="climbing-ability"></label>
+            <input type="radio" name="climbing-ability" value="advanced"></label>
 
             <label for="professional">Professional
-            <input type="radio" name="climbing-ability"></label>
+            <input type="radio" name="climbing-ability" value="professional"></label>
 
             
             <p>What are your favorite climbing styles?</p>

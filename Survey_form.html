@@ -1,6 +1,6 @@
 <!Doctype html>
 <html>
-
+ 
 <style>
 html{
     background: url(https://images7.alphacoders.com/594/594150.jpg)
@@ -32,17 +32,18 @@ html{
     <form id="survey-form">
         <div class="form-top">
             
-            <label id="name-label">Name</label>
+            <label for="name" id="name-label">Name</label>
             <input id="name" type="text" name="name" placeholder="Enter your name">
             
-            <label id="email-label">Email</label>
+            <label for="email" id="email-label">Email</label>
             <input id="email" type="email" name="email" placeholder="Enter your email">
             
-            <label id="number-label">Age</label>    
+            <label for="age" id="number-label">Age</label>    
             <input id="age" type="number" name="age" placeholder="Enter your name" min="5" max="115">
             
             <label>How did you hear about us?</label>
             <select id="dropdown" class="dropdown">
+                <option value="" selected disabled hidden>Choose here</option>
                 <option>Friend</option>
                 <option>Website</option>
                 <option>Social Media</option>
@@ -53,57 +54,57 @@ html{
         <div id="survey-btns">
             <p>What is your climbing ability?</p>
             
-            <label>Beginner
+            <label for="beginner">Beginner
+            <input type="radio" name="climbing-ability" value="beginner"></label>
+
+            <label for="intermediate">Intermediate
             <input type="radio" name="climbing-ability"></label>
 
-            <label>Intermediate
+            <label for="advanced">Advanced
             <input type="radio" name="climbing-ability"></label>
 
-            <label>Advanced
-            <input type="radio" name="climbing-ability"></label>
-
-            <label>Professional
+            <label for="professional">Professional
             <input type="radio" name="climbing-ability"></label>
 
             
             <p>What are your favorite climbing styles?</p>
 
-            <label>Indoor
+            <label for="indoor">Indoor
             <input type="checkbox" value="Indoor" name="climbing-style" ></label>
 
-            <label>Top-Rope
+            <label for="top-rope">Top-Rope
             <input type="checkbox" value="Top-Rope" name="climbing-style"></label>
 
-            <label>Sport
+            <label for="sport">Sport
             <input type="checkbox" value="Sport" name="climbing-style"></label>
             
-            <label>Trad
+            <label for="trad">Trad
             <input type="checkbox" value="Trad" name="climbing-style"></label>
 
-            <label>Bouldering
+            <label for="bouldering">Bouldering
             <input type="checkbox" value="Bouldering" name="climbing-style"></label>
 
-            <label>Ice
+            <label for="ice">Ice
             <input type="checkbox" value="Ice" name="climbing-style"></label>
 
-            <label>Alpine
+            <label for="alpine">Alpine
             <input type="checkbox" value="Alpine" name="climbing-style"></label>
 
-            <label>Other</label>
+            <label for="other">Other</label>
 
         </div>
 
         <div id="textarea">
         <p>Additional Comments?</p>
-        <label for="">
+        <label for="additional comments">
         <textarea placeholder="Enter comments here."></textarea></label>
         </div>
 
         <div>
-        <input type="submit">
+        <button id="submit" type="submit">Submit</button>
         </div>
 
-        
+
         </div>
 
     </form>

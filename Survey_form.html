@@ -21,19 +21,33 @@ html{
     height:100%
 }
 #name-label, #email-label, #number-label{
-    
+    align-items: left;
 }
 
 #form-top {display: grid;
 height: auto;
-max-width: 3in
+max-width: 3in;
         }
 
 #survey-btns {display: grid;
 align-items: left;
 justify-content: left;
-
 }
+
+#submit-btn{ display: block;
+width:3in;
+padding: .65rem;
+background-color:rgb(44, 204, 39);
+border-radius: 6px;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+}
+
+#submit-btn:hover{
+    background-color: linen;
+}
+
 </style>
 
      <header id="header">
@@ -108,11 +122,11 @@ justify-content: left;
         <div id="textarea">
         <p>Additional Comments?</p>
         <label for="additional comments">
-        <textarea placeholder="Enter comments here."></textarea></label>
+        <textarea placeholder="Enter comments here"></textarea></label>
         </div>
 
         <div>
-        <button id="submit" type="submit">Submit</button>
+        <button id="submit-btn" type="submit">Submit</button>
         </div>
 
 

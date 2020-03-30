@@ -21,30 +21,36 @@ html{
     height:100%
 }
 #name-label, #email-label, #number-label{
-    text-align: left;
+    
 }
 
+#form-top {display: grid;
+height: auto;
+max-width: 3in
+        }
 
+#survey-btns {display: grid;
+align-items: left;
+justify-content: left;
+
+}
 </style>
 
-
-
-    <header id="header">
+     <header id="header">
         <h1 id="title">Alpine Club Survey</h1>
         <p id="description">Please complete this survey to tell us a bit about yourself.</p>
     </header>
     
     <form id="survey-form">
-        <div id="form-top" class="form-top">
-            
+        <div id="form-top" class="form-top">            
             <label for="name" id="name-label">Name</label>
             <input id="name" type="text" name="name" placeholder="Enter your name" required>
             
             <label for="email" id="email-label">Email</label>
             <input id="email" type="email" name="email" placeholder="Enter your email" required>
             
-            <label for="age" id="number-label">Age</label>    
-            <input id="number" type="number" name="age" placeholder="Enter your name" min="5" max="115">
+            <label for="age(optional)" id="number-label">Age (optional)</label>    
+            <input id="number" type="number" name="age" placeholder="Enter your age" min="5" max="115">
             
             <label>How did you hear about us?</label>
             <select id="dropdown" class="dropdown">

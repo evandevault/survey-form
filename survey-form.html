@@ -1,0 +1,176 @@
+<!Doctype html>
+<html>
+   
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+html{
+    background: url(https://images7.alphacoders.com/594/594150.jpg)
+    no-repeat center;
+    background-size: cover;
+    font-family: 'Sen', sans-serif;
+
+}
+
+header{
+    text-align: center;
+    }
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+#survey-form{display: flexbox;
+max-width: 600px;
+
+
+
+}
+
+#form-top{display: grid;
+height: auto;
+max-width: 50%;
+}
+
+.input-checkbox, .input-radio{
+display:inline-block;
+margin-right: .625rem;
+min-width:  1.25rem;
+margin-top: .4rem;
+}
+
+textarea{
+min-height: 50px;
+width:50%;
+margin:0;
+}
+
+#submit-btn{ 
+display: block;
+width:50%;
+padding: .65rem;
+background-color:rgb(44, 204, 39);
+border-radius: 6px;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+}
+
+#submit-btn:hover{
+background-color: linen;
+}
+
+</style>
+
+     <header id="header">
+        <h1 id="title">Alpine Club Survey</h1>
+        <p id="description">Please complete this survey to tell us a bit about yourself.</p>
+    </header>
+    
+    <div class="container">
+    <form id="survey-form">
+        <div id="form-top" class="form-top">            
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="age(optional)" id="number-label">Age (optional)</label>    
+            <input id="number" type="number" name="age" placeholder="Enter your age" min="5" max="115">
+            
+            <label>How did you hear about us?</label>
+            <select id="dropdown" class="dropdown">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option>Friend</option>
+                <option>Website</option>
+                <option>Social Media</option>
+                <option>Other</option>
+            </select>
+        </div> 
+        
+        <div id="survey-btns" >
+            <p>What is your climbing ability?</p>
+        
+            <div>
+            <input class="input-radio" type="radio" name="climbing-ability" value="beginner">
+            <label for="beginner">Beginner</label> 
+            </div>
+
+            <div>
+            <input class="input-radio" type="radio" name="climbing-ability" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            </div>
+            <div>
+            <input class="input-radio" type="radio" name="climbing-ability" value="advanced">
+            <label for="advanced">Advanced</label>
+            </div>
+            <div>
+            <input class="input-radio" type="radio" name="climbing-ability" value="professional">
+            <label for="professional">Professional</label>
+            </div>
+            
+            <p>What are your favorite climbing styles?</p>
+
+          
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Indoor" name="climbing-style" >
+            <label for="indoor">Indoor</label>
+            </div>
+            
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Top-Rope" name="climbing-style">
+            <label for="top-rope">Top-Rope</label>
+            </div>
+            
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Sport" name="climbing-style">
+            <label for="sport">Sport</label>
+            </div>
+            
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Trad" name="climbing-style">
+            <label for="trad">Trad</label>
+            </div>
+           
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Bouldering" name="climbing-style">
+            <label for="bouldering">Bouldering</label>
+            </div>
+            
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Ice" name="climbing-style">
+            <label for="ice">Ice</label>
+            </div>
+            
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Alpine" name="climbing-style">
+            <label for="alpine">Alpine</label>
+            </div>
+
+            <div>
+            <input class="input-checkbox" type="checkbox" value="Other" name="climbing-style">
+            <label for="other">Other</label>
+            </div>
+
+        </div>
+
+        <div id="textarea">
+        <p>Additional Comments?</p>
+        <label for="additional comments">
+        <textarea placeholder="Enter comments here"></textarea></label>
+        </div>
+
+        <div>
+        <button id="submit-btn" type="submit">Submit</button>
+        </div>
+
+
+        
+
+    </form>
+    </div>
+    
+</html>
